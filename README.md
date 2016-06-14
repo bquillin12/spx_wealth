@@ -1,2 +1,2 @@
 # spx_wealth
-Drawing SPX wealth pag
+Drawing SPX wealth path
