@@ -3,7 +3,7 @@
 ############################################
 
 # packages
-# install.packages(c("quantmod", "PerformanceAnalytics", "plotly"))
+# install.packages(c("quantmod", "PerformanceAnalytics", "ggplot2"))
 library(quantmod)
 library(PerformanceAnalytics)
 library(ggplot2)
