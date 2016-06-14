@@ -22,7 +22,7 @@ cumret <- cumprod(1+sp500.subset)
 
 # Plot with ggplot2
 autoplot.zoo(cumret) +
-  ggtitle("S&P 500 Wealth Path (Jan 2016 = $1.00)") +
+  ggtitle("S&P 500 Wealth Path (Jan 1 2016 = $1.00)") +
   ylab("") +
   xlab("")
 
