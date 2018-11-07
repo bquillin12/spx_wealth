@@ -7,6 +7,7 @@
 library(quantmod)
 library(PerformanceAnalytics)
 library(ggplot2)
+library(dygraphs)
 
 # load data
 sp500_fred <- na.omit(getSymbols("SP500", src = "FRED", auto.assign = FALSE, method = "curl")) 
@@ -20,7 +21,7 @@ sp500.subset <- sp500_fred.r["2016-01-01/2016-06-09"]
 # draw wealth path
 cumret <- cumprod(1+sp500.subset)
 
-# Plot with ggplot2
+# Plot with dygraph
 autoplot.zoo(cumret) +
   ggtitle("S&P 500 Wealth Path (Jan 1 2016 = $1.00)") +
   ylab("") +
