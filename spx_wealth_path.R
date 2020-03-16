@@ -7,7 +7,6 @@
 library(quantmod)
 library(PerformanceAnalytics)
 library(ggplot2)
-library(dygraphs)
 
 # load data
 sp500_fred <- na.omit(getSymbols("SP500", src = "FRED", auto.assign = FALSE, method = "curl")) 
@@ -23,7 +22,7 @@ sp500_d.subset <- sp500_d["2020-01-01/2020-03-02"]
 # draw wealth path
 cumret <- cumprod(1+sp500_d.subset)
 
-# Plot with dygraph
+# Plot
 autoplot.zoo(cumret, color = "red") +
   ggtitle("S&P 500 Wealth Path (Jan 1 2020 = $1.00)") +
   ylab("") +
