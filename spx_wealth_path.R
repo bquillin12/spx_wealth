@@ -16,7 +16,7 @@ sp500 <- na.omit(getSymbols("SPY", src = "yahoo", auto.assign = FALSE, method = 
 # calculate daily returns 
 sp500_d <- dailyReturn(sp500)
 
-# subset for 2016 returns as we want this year's returns
+# subset for desired time period
 sp500_d.subset <- sp500_d["2020-01-01/2020-03-02"] 
 
 # draw wealth path
